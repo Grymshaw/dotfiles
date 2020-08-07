@@ -1,0 +1,54 @@
+" Better tab navigation
+noremap <C-x> :bdelete<CR>
+noremap <Tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
+
+" lightline
+set noshowmode
+let g:lightline = { 'colorscheme': 'onedark' }
+
+" Python syntax
+let python_highlight_all=1
+syntax on
+
+au BufNewFile,BufRead *.py
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+
+" js, html, and css indentation
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2
+
+" Relative numbers
+set relativenumber
+
+" YouCompleteMe config
+let g:ycm_server_python_interpreter='python3'
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let g:ycm_python_interpreter_path = ''
+let g:ycm_python_sys_path = []
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
+let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
+
+" python with virtualenv support
+" py3 << EOF
+" import os
+" import sys
+" if 'VIRTUAL_ENV' in os.environ:
+"   project_base_dir = os.environ['VIRTUAL_ENV']
+"   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"   # execfile(activate_this, dict(__file__=activate_this))
+"   exec(open(activate_this).read(), dict(__file__=activate_this))
+" EOF
