@@ -20,3 +20,6 @@ g() {
 # use vim as git editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# fzf
+export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
