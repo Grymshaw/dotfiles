@@ -16,3 +16,7 @@ g() {
     git status
   fi
 }
+
+# use vim as git editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
