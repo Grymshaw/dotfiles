@@ -23,3 +23,9 @@ export EDITOR="$VISUAL"
 
 # fzf
 export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+
+# Enable fractional scaling in Linux. See:
+# https://www.omgubuntu.co.uk/2019/06/enable-fractional-scaling-ubuntu-19-04/amp
+function scale() {
+  gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+}
