@@ -44,7 +44,10 @@ let g:ycm_extra_conf_vim_data = [
 let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
 
 " ALE python config
-let b:ale_linters = ['flake8', 'pylint']
+let b:ale_linters = {
+      \  'python': ['flake8', 'pylint'],
+      \  'javascript': ['eslint'],
+      \}
 let g:ale_lint_on_text_changed=1
 
 " flazz/vim-colorschemes
