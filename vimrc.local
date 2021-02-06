@@ -57,3 +57,6 @@ nn <expr> <C-B> &background ==# "dark" ? ":set background=light\<CR>" : ":set ba
 
 " vim-buftabline config
 let g:buftabline_indicators = 1
+
+" vim-graphql
+au BufNewFile,BufRead *.prisma setfiletype graphql
