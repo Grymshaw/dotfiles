@@ -41,3 +41,5 @@ alias ll="ls -alG"
 
 # Needed for YouCompleteMe with asdf python
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

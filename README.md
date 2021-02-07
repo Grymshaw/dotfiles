@@ -27,3 +27,14 @@
   - Symlink all dotfiles to home directory (.local as well)
 - YouCompleteMe installation
 - The Silver Searcher (ag) (through homebrew)
+
+# Manual steps required
+- `./setup.sh`
+  - Note: might have to make this executable first
+- `:PlugInstall` in vim
+- Set up natural typing in iTerm:
+    - Preferences > Profiles > Keys
+    - Hit "+" button
+    - Send escape sequence + (b, f, or d)
+    - Send Hex Codes: 0x17
+- Install amphetamine through app store
