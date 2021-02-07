@@ -42,4 +42,7 @@ alias ll="ls -alG"
 # Needed for YouCompleteMe with asdf python
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
+# Workaround to get asdf working
+. $(brew --prefix asdf)/asdf.sh
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
