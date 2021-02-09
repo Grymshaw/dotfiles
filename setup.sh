@@ -15,6 +15,9 @@ brew install --cask alfred
 # spectacle
 brew install --cask spectacle
 
+# flux
+brew install --cask flux
+
 # vim
 brew install vim
 
