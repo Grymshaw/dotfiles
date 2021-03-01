@@ -1,20 +1,3 @@
-# MacOS
-- Homebrew
-- iTerm 2 (through homebrew)
-  - Set up natural typing:
-    - Preferences > Profiles > Keys
-    - Hit "+" button
-    - Send escape sequence + (b, f, or d)
-    - Send Hex Codes: 0x17
-- asdf (through homebrew)
-- vim (through homebrew)
-- vim plug
-- Generate ssh key and add to github
-- Pull dotfiles repo
-  - Symlink all dotfiles to home directory (.local as well)
-- YouCompleteMe installation
-- The Silver Searcher (ag) (through homebrew)
-
 # Manual steps required
 - Setup ssh key for git
 - Clone dotfiles repo into home directory
@@ -27,10 +10,10 @@
     - Send Hex Codes: 0x17
 - Install amphetamine through app store
 - asdf:
-  - nodejs
-  - python
-  - golang
-  - postgres
+  - [nodejs](https://github.com/asdf-vm/asdf-nodejs)
+  - [python](https://github.com/danhper/asdf-python)
+  - [golang](https://github.com/kennyp/asdf-golang)
+  - [postgres](https://github.com/smashedtoatoms/asdf-postgres)
 - YouCompleteMe installation (might require some debugging...)
   - Might require additional steps depending on OS: https://github.com/ycm-core/YouCompleteMe/issues/3805#issuecomment-784107020
 - `:PlugInstall` in vim
