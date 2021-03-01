@@ -1,16 +1,3 @@
-## Requirements
-
-- [asdf version manager](https://github.com/asdf-vm/asdf)
-- [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe)
-  - Requires additional installation for this to work
-
-## Additional steps
-- Dotfiles should be symlinked in the home directory (as ~/._filename_)
-- ~/.bashrc.local should be sourced in your main bashrc file
-- `global_extra_conf.py` should be copied to the home directory to provide
-  support for python virtual environments in YCM
-
-
 # MacOS
 - Homebrew
 - iTerm 2 (through homebrew)
@@ -29,12 +16,21 @@
 - The Silver Searcher (ag) (through homebrew)
 
 # Manual steps required
-- `./setup.sh`
+- Setup ssh key for git
+- Clone dotfiles repo into home directory
+- Run `./setup.sh`
   - Note: might have to make this executable first
-- `:PlugInstall` in vim
 - Set up natural typing in iTerm:
     - Preferences > Profiles > Keys
     - Hit "+" button
     - Send escape sequence + (b, f, or d)
     - Send Hex Codes: 0x17
 - Install amphetamine through app store
+- asdf:
+  - nodejs
+  - python
+  - golang
+  - postgres
+- YouCompleteMe installation (might require some debugging...)
+  - Might require additional steps depending on OS: https://github.com/ycm-core/YouCompleteMe/issues/3805#issuecomment-784107020
+- `:PlugInstall` in vim
