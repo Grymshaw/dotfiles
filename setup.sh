@@ -21,6 +21,9 @@ brew install --cask flux
 # vim
 brew install vim
 
+# ctags
+brew install ctags
+
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -29,7 +32,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 brew install the_silver_searcher
 
 # Dotfiles
-git clone https://github.com/Grymshaw/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/bashrc.local ~/.bashrc
 ln -s ~/dotfiles/bash_profile ~/.bash_profile
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
@@ -37,4 +39,5 @@ ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/vimrc.bundles ~/.vimrc.bundles
 ln -s ~/dotfiles/vimrc.bundles.local ~/.vimrc.bundles.local
 ln -s ~/dotfiles/vimrc.local ~/.vimrc.local
+ln -s ~/dotfiles/ctags ~/.ctags
 cp ~/dotfiles/global_extra_conf.py ~/global_extra_conf.py
