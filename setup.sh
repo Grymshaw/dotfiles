@@ -18,6 +18,9 @@ brew install --cask spectacle
 # flux
 brew install --cask flux
 
+# godot
+brew install --cask godot
+
 # vim
 brew install vim
 
