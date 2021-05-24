@@ -20,6 +20,10 @@ brew install --cask flux
 
 # godot
 brew install --cask godot
+ln -s /Applications/Godot.app/Contents/MacOS/Godot /usr/local/bin/godot
+
+# vscode
+brew install --cask visual-studio-code
 
 # vim
 brew install vim
