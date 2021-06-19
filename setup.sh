@@ -22,6 +22,9 @@ brew install --cask flux
 brew install --cask godot
 ln -s /Applications/Godot.app/Contents/MacOS/Godot /usr/local/bin/godot
 
+# VLC player
+brew install --cask vlc
+
 # vscode
 brew install --cask visual-studio-code
 
