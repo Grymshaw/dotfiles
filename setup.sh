@@ -34,6 +34,12 @@ brew install vim
 # ctags
 brew install ctags
 
+# docker
+brew install docker
+brew install docker-machine
+brew install docker-compose
+brew install virtualbox --cask # required by docker
+
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
