@@ -40,6 +40,9 @@ brew install docker-machine
 brew install docker-compose
 brew install virtualbox --cask # required by docker
 
+# etcher
+brew install --cask balenaetcher
+
 # vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
